@@ -58,4 +58,4 @@ console.log('Berhasil Menambah Produk'+ dokRef.id);
 } catch(e){
   console.log('Gagal menambah Produk' + e)
 }
-}
+} 
