@@ -23,11 +23,11 @@
     </div>
     <div class="mb-3">
       <label class="form-label">Alamat</label>
-      <input type="text" class="form-control" id="input-Harga">
+      <input type="text" class="form-control" id="input-alamat">
     </div>
     <div class="mb-3">
       <label class="form-label">No telpon</label>
-      <input type="text" class="form-control" id="input-stok">
+      <input type="text" class="form-control" id="input-notlpn">
     </div>
     <button type="submit" class="btn btn-primary" id="tombol-tambah">Simpan</button>
   </form>
@@ -41,8 +41,8 @@
 
     let tombolTambah = document.getElementById('tombol-Tambah');
     let elemenNamaproduk = document.getElementById('input-nama');
-    let elemenHarga = document.getElementById('input-harga');
-    let elemenStok = document.getElementById('input-stok');
+    let elemenHarga = document.getElementById('input-alamat');
+    let elemenStok = document.getElementById('input-notlpn');
     
     tombolTambah.addEventListener('click', async function (e){
       e.preventDefault();
