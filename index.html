@@ -46,9 +46,10 @@
         elemendaftar.append(
           '<tr>' +
           ' <th>' + nomor + '</th>' +
-          ' <td>' + data.nama + '</td>' +
-          ' <td>' + formatAngka(data.harga) + '</td>' +
-       ' <td>' + data.stok + '</td>' +
+          ' <td>' + data.nama+ '</td>' +
+          ' <td>' + data. alamat+ '</td>' +
+       ' <td>' + data.No tlpn + '</td>' +
+       '<td>'+  '<btutton clas= "btn btn-danger tombol-hapus"data= "' + data.id +'">Hapus</button>'+'</td>'
           '</tr>'
         );
         nomor = nomor + 1;
@@ -56,6 +57,14 @@
       $('#loader').hide();
     });
  
+ $('.tombol-hapus').click(async function() {
+      await hapusPembeli($(this).attr('data'));
+      location.reload();
+      })
+      Await hapuspembeli($(this).attr('data'));
+      location.reload(); })
+      
+      $('#loader').hide();
    
   </script> 
 </body>
